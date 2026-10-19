@@ -1,13 +1,22 @@
+
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>PSG</title>
+    <title>PSG | Notícias e Resultados</title>
+    <meta
+      name="description"
+      content="Acompanhe notícias, resultados e novidades do Paris Saint-Germain."
+    />
+    <meta name="theme-color" content="#001e5a" />
 
+    <link rel="icon" href="image/psg.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="image/psg.png" type="image/x-icon" />
+
+    <!-- Use preload somente se esta imagem for o fundo principal do header. -->
+    <!-- Se o fundo for definido no CSS, veja a observação abaixo. -->
   </head>
 
   <body>
@@ -15,15 +24,24 @@
       <div class="overlay"></div>
 
       <nav>
-        <img src="image/psg.png" alt="PSG" id="psg" />
+        <img
+          src="image/psg.png"
+          alt="Paris Saint-Germain"
+          id="psg"
+          width="60"
+          height="60"
+          fetchpriority="high"
+        />
 
         <div class="links">
           <a href="#resultados">RESULTADOS</a>
           <a href="#noticias">NOTÍCIAS</a>
           <a href="#ligas">LIGAS</a>
-          <a href="https://www.psg.fr/pt/shop/lojas-oficiais" target="_blank"
-            >LOJAS</a
-          >
+          <a
+            href="https://www.psg.fr/pt/shop/lojas-oficiais"
+            target="_blank"
+            rel="noopener noreferrer"
+          >LOJAS</a>
         </div>
       </nav>
 
@@ -31,61 +49,86 @@
         <h1>Kylian Mbappé</h1>
 
         <p>
-          Seus dribles e velocidade, combinados com a habilidade e precisão, o
-          levaram a ser considerado um dos melhores jogadores de futebol do
-          mundo.
+          Seus dribles e velocidade, combinados com a habilidade e precisão,
+          o levaram a ser considerado um dos melhores jogadores de futebol
+          do mundo.
         </p>
 
         <a
           class="botao"
           href="https://pt.wikipedia.org/wiki/Kylian_Mbapp%C3%A9"
           target="_blank"
+          rel="noopener noreferrer"
         >
           LER BIOGRAFIA
         </a>
       </div>
     </header>
 
-    <section class="mundial">
+    <section class="mundial" aria-labelledby="resultados">
       <h2 id="resultados">CHAMPIONS LEAGUE</h2>
 
       <div class="jogo">
         <div class="time">
-          <img src="image/psg.png" alt="PSG" width="200px" />
+          <img
+            src="image/psg.png"
+            alt="Escudo do PSG"
+            width="200"
+            height="200"
+            loading="lazy"
+            decoding="async"
+          />
           <span>Paris Saint-Germain</span>
         </div>
 
-        <div class="placar">5 X 0</div>
+        <div class="placar" aria-label="Placar: PSG 5, Inter de Milão 0">
+          5 X 0
+        </div>
+
         <div class="time">
           <img
             src="image/inter-removebg-preview.png"
-            alt="Inter de Milão"
-            width="200px"
+            alt="Escudo da Inter de Milão"
+            width="200"
+            height="200"
+            loading="lazy"
+            decoding="async"
           />
           <span>Inter de Milão</span>
         </div>
       </div>
     </section>
 
-    <h3>PSG goleia Inter de Milão por 5 a 0 na final da Champions League</h3>
+    <section aria-labelledby="manchete-final">
+      <h3 id="manchete-final">
+        PSG goleia Inter de Milão por 5 a 0 na final da Champions League
+      </h3>
 
-    <p id="noticiario">
-      O Paris Saint-Germain goleou o Inter de Milão por 5 a 0 na final da
-      Champions League. Dominante durante toda a partida, o PSG marcou ainda no
-      primeiro tempo e ampliou a vantagem após o intervalo. O Inter pouco
-      conseguiu criar e não evitou a goleada do time francês.
-    </p>
+      <p id="noticiario">
+        O Paris Saint-Germain goleou o Inter de Milão por 5 a 0 na final da
+        Champions League. Dominante durante toda a partida, o PSG marcou ainda
+        no primeiro tempo e ampliou a vantagem após o intervalo. O Inter pouco
+        conseguiu criar e não evitou a goleada do time francês.
+      </p>
+    </section>
 
     <main>
       <section class="comunicado">
-        <img src="image/wallpaper-2.png" alt="estadio" />
+        <img
+          src="image/wallpaper-2.png"
+          alt="Estádio de futebol"
+          width="1200"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
 
         <div class="caixa-comunicado">
           <h2>Comunicado importante</h2>
 
           <p>
-            Mbappé comunicou à diretoria do Paris Saint-Germain que vai deixar o
-            clube ao fim do contrato, o qual se encerra em junho.
+            Mbappé comunicou à diretoria do Paris Saint-Germain que vai deixar
+            o clube ao fim do contrato, o qual se encerra em junho.
           </p>
 
           <p>
@@ -95,80 +138,102 @@
           </p>
 
           <p>
-            O novo time do atacante não foi anunciado. Embora o Real Madrid seja
-            o favorito, ainda não houve um acordo financeiro entre as partes...
+            O novo time do atacante não foi anunciado. Embora o Real Madrid
+            seja o favorito, ainda não houve um acordo financeiro entre as
+            partes...
           </p>
 
-          <a href="https://www.psg.fr/pt" target="_blank" id="link">
+          <a
+            href="https://www.psg.fr/pt"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="link"
+          >
             LER TODO COMUNICADO
           </a>
         </div>
       </section>
 
-      <h2 id="manchete">ULTIMAS NOTÍCIAS</h2>
+      <h2 id="manchete">ÚLTIMAS NOTÍCIAS</h2>
 
-      <section class="noticias">
-        <div id="noticias">
-          <img src="image/1.png" alt="noticiaum" width="350px" />
+      <section class="noticias" aria-label="Últimas notícias">
+        <article id="noticias">
+          <img
+            src="image/1.png"
+            alt="Notícia sobre Messi no PSG"
+            width="350"
+            height="200"
+            loading="lazy"
+            decoding="async"
+          />
           <p>PSG foi o pior clube de Messi?</p>
-          <small>EQUIPE PRICINPAL</small>
-        </div>
+          <small>EQUIPE PRINCIPAL</small>
+        </article>
 
-        <div>
+        <article>
           <img
             src="image/2.png"
-            alt="noticiadois"
-            width="350px"
-            height="200px"
+            alt="Notícia sobre o título contra a Inter de Milão"
+            width="350"
+            height="200"
+            loading="lazy"
+            decoding="async"
           />
-          <p>Tudo sobre o título contra o Inter de Milão </p>
-          <small>EQUIPE PRICINPAL</small>
-        </div>
+          <p>Tudo sobre o título contra o Inter de Milão</p>
+          <small>EQUIPE PRINCIPAL</small>
+        </article>
 
-        <div>
+        <article>
           <img
             src="image/wallpaper-1.png"
-            alt="noticiastres"
-            width="350px"
-            height="200px"
+            alt="Notícia sobre Mbappé no Real Madrid"
+            width="350"
+            height="200"
+            loading="lazy"
+            decoding="async"
           />
           <p>Mbappé no Real Madrid?</p>
-          <small>EQUIPE PRICINPAL</small>
-        </div>
+          <small>EQUIPE PRINCIPAL</small>
+        </article>
       </section>
 
       <div id="carregar">
-        <a href="https://www.psg.fr/pt/noticias" target="_blank">
+        <a
+          href="https://www.psg.fr/pt/noticias"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           CARREGAR MAIS
         </a>
       </div>
 
-      <iframe
-        width="900"
-        height="500"
-        src="https://www.youtube.com/embed/Wtf98hm04qE?si=sFUS8oLlvZkde6eE"
-        title="YouTube video player"
-        frameborder="0"
-        allow="
-          accelerometer;
-          autoplay;
-          clipboard-write;
-          encrypted-media;
-          gyroscope;
-          picture-in-picture;
-          web-share;
-        "
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+      <div class="video">
+        <iframe
+          width="900"
+          height="500"
+          src="https://www.youtube-nocookie.com/embed/Wtf98hm04qE"
+          title="Vídeo sobre futebol"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
     </main>
 
     <footer id="ligas">
       <div id="rodape">
         <div id="primeira">
-          <img src="image/psg-light.png" alt="psg" width="50px" />
-          <p>Paris San German</p>
-          <br />
+          <img
+            src="image/psg-light.png"
+            alt="Paris Saint-Germain"
+            width="50"
+            height="50"
+            loading="lazy"
+            decoding="async"
+          />
+
+          <p>Paris Saint-Germain</p>
 
           <p>
             <a
@@ -202,17 +267,14 @@
         </div>
 
         <div class="redes">
-          <p>Redes Sociais</p>
-          <br />
+          <p>Redes sociais</p>
 
           <p>
             <a
               href="https://www.facebook.com/PSG"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              <small>Facebook</small>
-            </a>
+            ><small>Facebook</small></a>
           </p>
 
           <p>
@@ -220,9 +282,7 @@
               href="https://www.instagram.com/psg/"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              <small>Instagram</small>
-            </a>
+            ><small>Instagram</small></a>
           </p>
 
           <p>
@@ -230,15 +290,12 @@
               href="https://www.youtube.com/@PSG"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              <small>Youtube</small>
-            </a>
+            ><small>YouTube</small></a>
           </p>
         </div>
 
         <div class="redes">
           <p>Idiomas</p>
-          <br />
           <p><small>English</small></p>
           <p><small>Français</small></p>
           <p><small>Español</small></p>
